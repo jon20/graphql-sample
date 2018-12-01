@@ -22,9 +22,10 @@ func GraphqlSetting() http.Handler {
 		panic(err)
 	}
 	h := handler.New(&handler.Config{
-		Schema:   &schema,
-		Pretty:   true,
-		GraphiQL: true,
+		Schema:     &schema,
+		Pretty:     true,
+		GraphiQL:   false,
+		Playground: true,
 	})
 	return h
 }
