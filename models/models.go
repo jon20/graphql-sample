@@ -1,5 +1,5 @@
 package models
 
 type SampleMutateResp struct {
-	message string
+	Message string
 }
