@@ -42,7 +42,7 @@ func SampleQueryArgs() map[string]*graphql.ArgumentConfig {
 
 func SampleQueryResolve(params graphql.ResolveParams) (interface{}, error) {
 	resp := &models.SampleMutateResp{
-		Message: "Hello",
+		Message: "Hello, This is SampleQuery",
 	}
 	return resp, nil
 }
